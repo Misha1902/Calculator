@@ -2,12 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     android:orientation="vertical">
-
     <EditText
         android:id="@+id/Num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="@string/number1"/>
     <EditText
         android:id="@+id/Num2"
@@ -17,33 +18,36 @@
 
     <TextView
         android:id="@+id/NumOut"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
-
     <Button
         android:onClick="plus"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/plus" />
+        android:text="@string/plus"
+        android:layout_gravity="center"/>
 
     <Button
         android:onClick="minus"
         android:id="@+id/button3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/minus" />
+        android:text="@string/minus"
+        android:layout_gravity="center"/>
 
     <Button
         android:onClick="multiplication"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/multiplication" />
+        android:text="@string/multiplication"
+        android:layout_gravity="center"/>
 
     <Button
         android:onClick="division"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/division" />
-
+        android:text="@string/division"
+        android:layout_gravity="center"/>
 </LinearLayout>
