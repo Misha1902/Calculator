@@ -7,43 +7,45 @@
     <EditText
         android:id="@+id/Num1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/number1"/>
+        android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/Num2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/number2"/>
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/NumOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="23sp"
+        android:text="@string/zero" />
 
     <Button
-        android:onClick="plus"
+        android:id="@+id/plus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/plus" />
+        android:text="@string/plus"
+        android:layout_margin="5dp"/>
 
     <Button
-        android:onClick="minus"
-        android:id="@+id/button3"
+        android:id="@+id/minus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/minus" />
+        android:text="@string/minus"
+        android:layout_margin="5dp"/>
 
     <Button
-        android:onClick="multiplication"
+        android:id="@+id/multiplication"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/multiplication" />
+        android:text="@string/multiplication"
+        android:layout_margin="5dp"/>
 
     <Button
-        android:onClick="division"
+        android:id="@+id/division"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/division" />
+        android:text="@string/division"
+        android:layout_margin="5dp"/>
 
 </LinearLayout>

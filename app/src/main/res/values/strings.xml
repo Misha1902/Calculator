@@ -6,4 +6,5 @@
     <string name="division">/</string>
     <string name="number1">number1</string>
     <string name="number2">number2</string>
+    <string name="zero">0</string>
 </resources>
