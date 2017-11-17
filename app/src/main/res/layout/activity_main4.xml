@@ -36,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/plus"
+        android:textSize="100dp"
         android:layout_weight="1"/>
 
     <Button
@@ -44,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/minus"
+        android:textSize="100dp"
         android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
@@ -55,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/multiplication"
+        android:textSize="100dp"
         android:layout_weight="1"/>
 
     <Button
@@ -62,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/division"
+        android:textSize="100dp"
         android:layout_weight="1"/>
     </LinearLayout>
 </LinearLayout>
