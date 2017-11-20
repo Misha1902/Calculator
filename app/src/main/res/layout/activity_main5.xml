@@ -59,4 +59,10 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="left"
         android:text="@string/division" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="MainActivity2"
+        android:layout_above="@+id/Num1"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.student2.something;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -84,10 +85,18 @@ int a;
                 }
             }
         };
+
+
         plus.setOnClickListener(oclButton);
         minus.setOnClickListener(oclButton);
         multiplication.setOnClickListener(oclButton);
         division.setOnClickListener(oclButton);
+    }
+
+    public void MainActivity2(View view){
+        Intent intent = new  Intent (this, MainActivity2.class );
+        intent.putExtra("number1Text", number1.getText().toString());
+        startActivity(intent);
     }
 
 }

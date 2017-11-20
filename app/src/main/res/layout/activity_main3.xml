@@ -51,4 +51,8 @@
         android:text="@string/division"
         android:layout_gravity="center"
         android:layout_margin="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="MainActivity2"/>
 </LinearLayout>
