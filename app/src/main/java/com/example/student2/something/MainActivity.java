@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-int a, startActivity;
+int a;
     TextView result;
     EditText number1;
     EditText number2;
@@ -24,7 +24,7 @@ int a, startActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         a = (int) (Math.random()*5+1);
-        startActivity = 1;
+        final int startActivity = 1;
         super.onCreate(savedInstanceState);
         switch (startActivity){
             case (1): setContentView(R.layout.activity_main); break;
