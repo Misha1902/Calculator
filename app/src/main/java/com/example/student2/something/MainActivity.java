@@ -1,6 +1,7 @@
 package com.example.student2.something;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-int a;
+int a, startActivity;
     TextView result;
     EditText number1;
     EditText number2;
@@ -23,15 +24,21 @@ int a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         a = (int) (Math.random()*5+1);
+        startActivity = 1;
         super.onCreate(savedInstanceState);
-
-        switch (a) {
-            case 1: setContentView(R.layout.activity_main); break;
-            case 2: setContentView(R.layout.activity_main2); break;
-            case 3: setContentView(R.layout.activity_main3); break;
-            case 4: setContentView(R.layout.activity_main4); break;
-            case 5: setContentView(R.layout.activity_main5); break;
+        switch (startActivity){
+            case (1): setContentView(R.layout.activity_main); break;
+            case (0):
+                switch (a) {
+                case 1: setContentView(R.layout.activity_main); break;
+                case 2: setContentView(R.layout.activity_main2); break;
+                case 3: setContentView(R.layout.activity_main3); break;
+                case 4: setContentView(R.layout.activity_main4); break;
+                case 5: setContentView(R.layout.activity_main5); break;
+            }
+            break;
         }
+
         result = (TextView) findViewById(R.id.NumOut);
         number1 = (EditText) findViewById(R.id.Num1);
         number2 = (EditText) findViewById(R.id.Num2);
@@ -95,6 +102,8 @@ int a;
 
     public void MainActivity2(View view){
         Intent intent = new  Intent (this, MainActivity2.class );
+        //Intent intent = new Intent(Intent.ACTION_VIEW);
+        //intent.setData(Uri.parse("http://myitschool.ru"));
         intent.putExtra("number1Text", number1.getText().toString());
         startActivity(intent);
     }
