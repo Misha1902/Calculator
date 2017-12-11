@@ -7,4 +7,9 @@
     <string name="number1">number1</string>
     <string name="number2">number2</string>
     <string name="zero">0</string>
+    <string-array name="systems">
+        <item>2</item>
+        <item>8</item>
+        <item>16</item>
+    </string-array>
 </resources>

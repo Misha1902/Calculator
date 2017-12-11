@@ -47,6 +47,6 @@
         android:layout_height="wrap_content"
         android:text="@string/division"
         android:layout_margin="5dp"/>
-    
+
 
 </LinearLayout>
