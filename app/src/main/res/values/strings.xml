@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Something</string>
+    <string name="app_name">Settings</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="multiplication">*</string>
