@@ -28,13 +28,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean pressed = false;
-    public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback {
 
+    public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback {
+        boolean pressed = false;
         SurfaceHolder holder;
         float x=0;
         float y=0;
-        int r=150;
+        int r=0;
 
         @Override
         public boolean onTouchEvent(MotionEvent event){
